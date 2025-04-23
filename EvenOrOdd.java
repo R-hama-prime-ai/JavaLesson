@@ -99,23 +99,44 @@ public class EvenOrOdd {
 		
 		
 		/*16*/
-		int price = 12000;
-		double percent = 0.3;
+		double price = 12000;
+		double discountRate = 30;
+		
+		double discount = price * (discountRate/100); /*割り引いた価格*/
+		double discountPrice = price - discount; /*割引後の価格*/
+		
+		System.out.println((int)discountPrice);
 		
 		
+		/*17*/
+		boolean a = true;
+		boolean b = false;                   /*  True or FalseはTrueが出る*/
+		boolean c = (a && b) || (!a && !b);  /*  &&かつのほうが最初 */
+		System.out.println(c);
+		
+		/*18*/
+		boolean x = true;
+		boolean y = false;
+		boolean z = x || y && !x;
+		System.out.println(z);
 		
 		
+		/*19*/
+		boolean p = false;
+		boolean q = true;
+		boolean r = !(p || q) && (p && !q);
+		System.out.println(r);
 		
+		/*20*/
+		int age1 = 20;
+		boolean hasStudentID = false;
 		
+		if ((age1 < 25 && hasStudentID) || age1 == 20) {
 		
+		System.out.println("割引対象です");/*正解こっち*/
+			} else {
 		
-		
-		
-		
-		
-		
-		
-		
-		
+		System.out.println("通常料金です");
+			}
 	}
 }
