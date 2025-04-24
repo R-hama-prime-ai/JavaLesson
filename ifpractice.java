@@ -12,6 +12,20 @@ public class ifpractice {
 		}
 		
 		
+		a = 20;
+		b = 3;
+		
+		if (a == b) {
+			System.out.println("aはbの値と同じ");
+		} else {
+			System.out.println("aとb全然ちゃうやないかい");
+		}
+		
+		
+		
+		
+		
+		
 		boolean isSunny = false;
 		
 		

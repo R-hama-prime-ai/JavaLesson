@@ -15,18 +15,18 @@ public class PracticeProblem {
 
 		System.out.println(fluitsList);
 
-		try (Scanner scanner = new Scanner(System.in)) {
-			System.out.println("ほしい商品を入力してください");
-			String fluits = scanner.nextLine();
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("ほしい商品を入力してください");
+		String fluits = scanner.nextLine();
 
-			Integer value = fluitsList.get(fluits);
-			if (value != null) {
-				System.out.println(fluits + ":" + value + "円");
-			} else {
-				System.out.println("申し訳ありませんが商品がございません");
-			}
+		Integer value = fluitsList.get(fluits);
+		if (value == null) {
+			System.out.println("申し訳ありませんが商品がございません");
+		} else {
+			System.out.println(fluits + ":" + value + "円");
 		}
-
+		scanner.close();
+		
 		/*スキャナー
 		Scanner scaner = new Scanner(System.in);
 		System.out.println("ほしい商品を入力してください");
