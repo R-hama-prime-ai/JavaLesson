@@ -52,6 +52,10 @@ public class TestScore {
 		System.out.println(intTemperature);
 		
 		
+		
+		
+		
+		
 	}
 	
 }
