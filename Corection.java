@@ -1,10 +1,14 @@
 package jp.co.aforce.sample;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
 
 public class Corection {
 	public static void main(String args[]) {
@@ -72,10 +76,60 @@ public class Corection {
 		intList.add(42);
 		intList.add(3);
 		
-		for(int i = 0; i <= intList.size(); i++) {
+		for(int i = 0; i < intList.size(); i++) {
 			Integer NumList = intList.get(i);
-			System.out.println("変数に入れた値" + NumList);
+			System.out.println("変数に入れた値:" + NumList);
 		}
+		
+		
+		
+		List <String> alfList = new ArrayList<String>();
+		alfList.add("c");
+		alfList.add("r");
+		alfList.add("o");
+		alfList.add("t");
+		
+		System.out.println(alfList);
+		
+		Collections.sort(alfList);
+		System.out.println(alfList);
+		
+		
+		
+		Map <String,Integer> cookList = new HashMap<>();
+		cookList.put("肉じゃが定食",800);
+		cookList.put("アジフライ定食", 920);
+		cookList.put("麻婆豆腐定食", 1000);
+		cookList.put("日替わり定食",900);
+		
+		System.out.println(cookList);
+		
+		Integer cook = cookList.get("麻婆豆腐定食");
+		System.out.println(cook);
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("商品入力");
+		String item = scanner.next();
+		Integer price = cookList.get(item);
+		System.out.println(item + price + "円");
+		scanner.close();
+		
+		
+		
+		Integer number[] = {3,6,8,10,2,75};
+		System.out.println(Arrays.toString(number));
+		
+		
+		
+		List <Integer> numberList = new ArrayList<>(Arrays.asList(number));
+		numberList.add(53);
+		
+		
+		System.out.println(numberList);
+		
+		
+		
+		
 		
 		
 		
